@@ -1,0 +1,9 @@
+.hide,#tweet,#user,#prof i{
+    display: none;
+}
+#leftSide{
+    width: 9%;
+}
+#center{
+width: 66%;
+}

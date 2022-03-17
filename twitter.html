@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <link rel="stylesheet" href="twitter.css">
+    <link rel="stylesheet" href="tabl.css" media="screen and (max-width:940px)">
+    <script src="https://kit.fontawesome.com/60e5baead1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+<body>
+    <aside class="col-3" id="leftSide">
+        <i id="logoTwitter" class="fab fa-twitter fa-2x col-12"></i>
+        <ul class="col-12" id="list">
+            <li><i id="logoHome" class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span class="hide">Home</span></li>
+            <li><span id="explore">#</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="hide">Explore</span></li>
+            <li><i class="fas fa-bell" style="color: #D9D9D9;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span class="hide">Notifications</span></li>
+            <li><i class="fas fa-envelope-square" style="color: #D9D9D9;">&nbsp;&nbsp;&nbsp;&nbsp;<span class="hide">Messages</span></i></li>
+            <li><i class="far fa-bookmark" style="color: #D9D9D9;">&nbsp;&nbsp;&nbsp;&nbsp;<span class="hide">Bookmarks</span></i></li>
+            <li><i class="fas fa-list-alt" style="color: #D9D9D9;">&nbsp;&nbsp;&nbsp;&nbsp;<span class="hide">Lists</span></i></li>
+            <li><i class="fas fa-user" style="color: #D9D9D9;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span class="hide">Profile</span></li>
+            <li><i class="fas fa-angle-double-right" style="color: #D9D9D9;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span class="hide">More</span></li>
+        </ul>
+        <button class="col-10" id="tweet">Tweet</button>
+        <div class="col-12" id="prof">
+            <img class="imgProfile" src="images/bilal.jpg" alt="">
+            <span id="user">Bilal El Maestro<br><small id="smallUser">@BilalElMaestro1</small></span>
+            <i class="fas fa-angle-right fa-2x" style="color: #D9D9D9;margin-left: 20px;"></i>
+        </div>
+    </aside>
+    <div class="col-6" id="center">
+        <div class="col-12" id="mind">
+            <p id="hom">Home<i id="star" class="far fa-star"></i></p>
+            <div id="tweete">
+                <img class="imgProfile" src="images/bilal.jpg" alt="">
+                <input id="inputTweete" type="text" placeholder="What's happening?">
+            </div>
+            <div id="everyPrivacy">
+                <i class="fas fa-globe-americas" id="world"></i>
+                <p id="every">Everyone can reply</p>
+            </div>
+            <select style="display: none;" id="menuPrivacy">
+                <option>Everyone</option>
+                <option>People you follow</option>
+                <option>Only people you mentioned</option>
+            </select>
+            <p id="line">______________________________________________________</p>
+            <div id="icons">
+                <i class="far fa-image"></i>
+                <i class="fas fa-gift"></i>
+                <i class="fas fa-poll-h"></i>
+                <i class="fas fa-smile-wink"></i>
+                <i class="fas fa-calendar-alt"></i>
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="button" id="tw" value="Tweet">
+            </div>
+            <p class="lines">_______________________________________________________________________</p>
+        </div>
+
+        <div style="display: none;" class="tweete aaa col-12">
+            <div class="navTweet">
+                <img class="test" src="images/bilal.jpg" alt="">
+                <span class="userName">Bilal Ahmed <small id="userHour">@BilalElMaestro . now</small></span>
+                <span class="dot">...</span>
+            </div>
+            <p class="pag"></p>
+            <div class="iconsTweete">
+                <i class="far fa-comment"></i>
+                <i class="fas fa-retweet"></i>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-square"></i>
+            </div>
+        </div>
+        <div class="tweete col-12">
+            <div class="navTweet">
+                <img src="images/bilal.jpg" alt="">
+                <span class="userName">Ahmed Mohammed<small class="userHour">@A7med27 .14h</small></span>
+                <span class="dot">...</span>
+            </div>
+            <p class="pag">أنا أبن مصر<br>أنا ضد الكسر<br>أنا رافع رأسي</p>
+            <div class="iconsTweete">
+                <i class="far fa-comment"></i>
+                <i class="fas fa-retweet"></i>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-square"></i>
+            </div>
+            <p class="lines">_______________________________________________________________________</p>
+        </div>
+        <div class="tweete col-12">
+            <div class="navTweet">
+                <img src="images/Twitterrebrand2.jpg" alt="">
+                <span class="userName">Alaa Mohammed<small class="userHour">@Alaa . 7h</small></span>
+                <span class="dot">...</span>
+            </div>
+            <p class="pag">نينينيييي<br>أومــــــــال<br>حــــــــصل</p>
+            <div class="iconsTweete">
+                <i class="far fa-comment"></i>
+                <i class="fas fa-retweet"></i>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-square"></i>
+            </div>
+            <p class="lines">_______________________________________________________________________</p>
+        </div>
+        <div class="tweete col-12">
+            <div class="navTweet">
+                <img src="images/elmaestro2.png" alt="">
+                <span class="userName">Ninooo<small class="userHour">@7anen . 10h</small></span>
+                <span class="dot">...</span>
+            </div>
+            <p class="pag"> ع الله حكــــايتنا<br>ي مسهل الحال<br>النهـــــــاية</p>
+            <div class="iconsTweete">
+                <i class="far fa-comment"></i>
+                <i class="fas fa-retweet"></i>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-square"></i>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-3" id="rightSide">
+        <i id="search2" class="fas fa-search fa-2x"></i>
+        <input placeholder="Search Twitter" ; id="search" type="search">
+        <div>
+            <p class="hap">What's happening</p>
+            <p class="news">وفاة الاعلامي المصري وائل الابراشي عن عمر يناهز 58 عاما </p>
+            <p class="news">بكره تشوفوا مصر ... حقا ي مصر</p>
+            <p class="news">الغزالة رايقة </p>
+            <p class="news">متقولش عطيتنا أي مصر قول هتعطي أي لمصر </p>
+            <p class="news">هبـــــــــــــاد كبييييييييير أنا ع فكره </p>
+            <p class="news">مالكم ي جماعه ما تروقو كده بقي </p>
+            <p class="news">بكره هتحلو و هتزهزه</p>
+        </div>
+        <div>
+            <p class="hap">Requests</p>
+            <p class="followers">Yasmeen Sabry<button>Accept</button></p>
+            <p class="followers">M Sherif<button>Accept</button></p>
+            <p class="followers">Mohammed Ramdan<button>Accept</button></p>
+            <p class="followers">Cristiano Ronaldoo<button>Accept</button></p>
+        </div>
+        <div>
+            <p class="hap">who to follow you </p>
+            <p class="followers">Treka<button>Follow</button></p>
+            <p class="followers">Kahrabah<button>Follow</button></p>
+            <p class="followers">Barkat<button>Follow</button></p>
+            <p class="followers">Mo Salah<button>Follow</button></p>
+        </div>
+    </div>
+    </div>
+    <script src="twitter.js"></script>
+</body>
+
+</html>
